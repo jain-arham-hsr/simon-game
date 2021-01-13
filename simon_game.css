@@ -1,0 +1,138 @@
+#container {
+  background-color: #05386b;
+  height: 450px;
+  width: 450px;
+  border-radius: 450px;
+  z-index: 950;
+  position: relative;
+}
+
+#button1 {
+  z-index: 950;
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #f94d55;
+  width: 200px;
+  height: 200px;
+  border-top-left-radius: 450px;
+  border: none;
+  outline: none;
+}
+
+#button1:hover {
+  cursor: pointer;
+  background-color: #fa8186;
+  /*   animation: emphasize 3s infinite; */
+}
+
+#button2 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #5cdb95;
+  width: 200px;
+  height: 200px;
+  border-top-right-radius: 450px;
+  border: none;
+  outline: none;
+  z-index: 950;
+}
+
+#button2:hover {
+  cursor: pointer;
+  background-color: #8ce5b4;
+}
+
+#button3 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #2e9cca;
+  width: 200px;
+  height: 200px;
+  border-bottom-left-radius: 450px;
+  border: none;
+  outline: none;
+  z-index: 950;
+}
+
+#button3:hover {
+  cursor: pointer;
+  background-color: #69badc;
+}
+
+#button4 {
+  margin-left: 15px;
+  margin-top: 15px;
+  background-color: #fbe551;
+  width: 200px;
+  height: 200px;
+  border-bottom-right-radius: 450px;
+  border: none;
+  outline: none;
+  z-index: 950;
+}
+
+#button4:hover {
+  cursor: pointer;
+  background-color: #fcec85;
+}
+
+#button-container {
+  background-color: #05386b;
+  height: 250px;
+  width: 250px;
+  border-radius: 250px;
+  position: absolute;
+  z-index: 1000;
+  top: 100px;
+  left: 100px;
+}
+
+#controlButton {
+  background-color: white;
+  position: absolute;
+  border: none;
+  outline: none;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  font-weight: 500;
+  font-size: 28px;
+  font-family: "Roboto Mono", monospace;
+  top: 25px;
+  left: 25px;
+  text-align: center;
+}
+
+#controlButton:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+
+#level {
+  font-family: "Roboto Mono", monospace;
+  font-weight: bold;
+  font-size: 24px;
+  width: 450px;
+  text-align: center;
+}
+
+#game {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes emphasize {
+  0% {
+    background-color: $t-left;
+  }
+  50% {
+    background-color: $t-left-light;
+    transtition: transform 1s;
+    transform: scale(1.1);
+  }
+  100% {
+    background-color: $t-left;
+  }
+}
